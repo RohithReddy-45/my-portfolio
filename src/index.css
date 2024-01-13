@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 20px;
+  }
+}
+
+@layer components {
+  .bg-gradient {
+    background: radial-gradient(ellipse at 50% 50%, #443232, #302a2a, #1f1f1f);
+  }
+
+  .font-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+  }
+
+}
