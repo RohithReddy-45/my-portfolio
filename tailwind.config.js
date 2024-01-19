@@ -35,7 +35,7 @@ export default {
             transform: 'translate(0,0) scaleX(1.1) scaleY(0.8)',
           },
           '50%': {
-            backgroundImage: 'url(./assets/bunny-jump.png)',
+            backgroundImage: 'url(/assets/bunny-jump.png)',
             transform: 'translate(0,-60px) scaleX(0.9) scaleY(1.2)',
           },
         },
