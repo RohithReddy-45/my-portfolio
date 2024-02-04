@@ -1,21 +1,12 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 
 export const projects = [
   {
     id: 1,
-    name: 'Feastly',
-    description: 'Feastly is a responsive restaurant website landing page.',
-    image: '/assets/Feastly.jpg',
-    githubLink: 'https://github.com/RohithReddy-45/Feaslty',
-    liveSite: 'https://feastly-rohith.netlify.app/',
-    tags: ['HTML', 'CSS', 'Javascript'],
-  },
-  {
-    id: 2,
     name: 'Spotify Clone',
     description:
-      'An upgraded Spotify clone! Easily upload songs, make secure payments via Stripe, and enjoy a polished design powered by Tailwind.',
+      'An upgraded Spotify clone! Easily upload songs, make secure payments via Stripe.',
     image: '/assets/spotifyClone.jpg',
     githubLink: 'https://github.com/RohithReddy-45/spotify-clone',
     liveSite: 'https://spotifyclone-next13.vercel.app/',
@@ -29,7 +20,32 @@ export const projects = [
     ],
   },
   {
+    id: 2,
+    name: 'Stepinstyle',
+    description: 'Stepinstyle is an e-commerce shoe store.',
+    image: '/assets/stepinstyle.jpg',
+    githubLink: 'https://github.com/RohithReddy-45/stepinstyle',
+    liveSite: 'https://stepinstyle-7x1x.onrender.com/',
+    tags: [
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Redux',
+    ],
+  },
+  {
     id: 3,
+    name: 'Feastly',
+    description: 'Feastly is a responsive restaurant website landing page.',
+    image: '/assets/Feastly.jpg',
+    githubLink: 'https://github.com/RohithReddy-45/Feaslty',
+    liveSite: 'https://feastly-rohith.netlify.app/',
+    tags: ['HTML', 'CSS', 'Javascript'],
+  },
+  {
+    id: 4,
     name: 'Recipe Hunt',
     description:
       'Recipehunt is a web app for finding recipes, providing ingredients and quantities for each item.',
@@ -69,5 +85,10 @@ export const socialLinks = [
     name: 'Linkedin',
     link: 'https://www.linkedin.com/in/rohith-reddy45',
     icon: <FaLinkedin size={24} />,
+  },
+  {
+    name: 'Twitter',
+    link: 'https://twitter.com/Ro_dev45',
+    icon: <FaTwitter size={24} />,
   },
 ];

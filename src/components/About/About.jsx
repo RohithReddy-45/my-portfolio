@@ -4,9 +4,9 @@ import SocialLinks from '../SocialLinks';
 function About() {
   return (
     <div className="mt-4 bg-bgsecondary py-3 md:px-6" id="About">
-      <div className="container mx-auto">
+      <div className="container">
         <h1 className="my-6 text-center text-3xl font-bold">About me</h1>
-        <div className="flex max-w-screen-2xl flex-col items-center gap-5 px-6 py-3 md:flex-row md:items-start md:gap-14 lg:gap-24">
+        <div className="flex max-w-screen-2xl flex-col items-center gap-5 px-4 py-3 md:flex-row md:items-start md:gap-14 lg:gap-24">
           <div className="flex flex-col gap-4 p-3 text-center md:w-[50%] md:text-left">
             <h2 className="text-lg font-semibold">Who am I?</h2>
 

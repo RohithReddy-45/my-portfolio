@@ -29,14 +29,14 @@ function Navbar() {
           'border-b border-white/80 shadow-sm backdrop-blur-2xl backdrop-saturate-200',
       )}
     >
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex items-center justify-between">
           <a href="/" className="font-roboto-slab text-2xl">
             SRR
           </a>
 
           <div className="flex items-center gap-4">
-            <div className="mr-4 hidden gap-6 md:flex">
+            <div className="hidden gap-6 md:flex">
               <NavLinks className="flex items-center gap-6" />
             </div>
           </div>

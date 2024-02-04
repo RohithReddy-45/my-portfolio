@@ -40,10 +40,16 @@ function TechStack() {
               className="size-14"
             />
             <img
-              src="/assets/go-svgrepo-com.svg"
-              alt="golang logo"
+              src="/assets/nodejs-svgrepo-com.svg"
+              alt="nodejs logo"
               className="size-14"
             />
+            <img
+              src="/assets/express-svgrepo-com.svg"
+              alt="express logo"
+              className="size-14"
+            />
+
             <img
               src="/assets/python-svgrepo-com.svg"
               alt="python logo"
@@ -111,7 +117,7 @@ function TechStack() {
             />
             <img
               src="/assets/typescript-logo-svgrepo-com.svg"
-              alt="react logo"
+              alt="typescript logo"
               className="size-14"
             />
             <img
@@ -124,11 +130,18 @@ function TechStack() {
               alt="nextjs logo"
               className="size-14"
             />
+
             <img
-              src="/assets/go-svgrepo-com.svg"
-              alt="golang logo"
+              src="/assets/nodejs-svgrepo-com.svg"
+              alt="nodejs logo"
               className="size-14"
             />
+            <img
+              src="/assets/express-svgrepo-com.svg"
+              alt="express logo"
+              className="size-14"
+            />
+
             <img
               src="/assets/python-svgrepo-com.svg"
               alt="python logo"
