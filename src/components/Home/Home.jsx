@@ -37,7 +37,7 @@ function Home() {
           <Button
             className="md:text-lg"
             type="secondary"
-            link="https://drive.google.com/file/d/1ca0Yc6Xicbk1VgL4bN3ZtUZ35qNThsMD/view?usp=drivesdk"
+            link="https://drive.google.com/file/d/1gqkaKUI0aditeQPG_qymmwqJe8Ag3DHp/view?usp=drivesdk"
           >
             Resume
           </Button>
