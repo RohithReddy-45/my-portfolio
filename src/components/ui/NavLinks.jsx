@@ -1,6 +1,6 @@
 import Button from './Button';
 import NavList from './NavList';
-import { links } from '../data/data';
+import { links } from '../../data/data';
 
 function NavLinks({ className, onClick }) {
   return (

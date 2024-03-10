@@ -1,13 +1,26 @@
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import Button from '../Button';
+import Button from '../ui/Button';
 import ProjectTags from './ProjectTags';
 
 function Project({ name, description, image, tags, liveSite, githubLink }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="flex flex-col gap-2 text-start">
-      <div className="group relative overflow-y-auto">
+    <div className="flex flex-col gap-2 text-start" ref={ref}>
+      <div
+        className="group relative overflow-y-auto"
+        style={{
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? 'none' : 'translateY(20px)',
+          transition: 'all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s',
+          transitionDelay: '0.5s',
+        }}
+      >
         <img src={image} alt="" className="h-auto w-auto rounded-xl" />
         <div className="bg-gradient absolute inset-0 flex flex-col justify-around rounded-xl p-2 text-center text-xs text-white opacity-0 transition group-hover:opacity-100 group-hover:duration-1000 xs:text-lg sm:text-2xl md:p-4 md:text-sm lg:text-xl">
           <p className="font-semibold">{description}</p>
@@ -36,8 +49,18 @@ function Project({ name, description, image, tags, liveSite, githubLink }) {
         </div>
       </div>
 
-      <p className="text-xl font-semibold lg:text-2xl">{name}</p>
-      <ProjectTags tags={tags} />
+      <p
+        className="text-xl font-semibold lg:text-2xl"
+        style={{
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? 'none' : 'translateY(20px)',
+          transition: 'all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s',
+          transitionDelay: '0.5s',
+        }}
+      >
+        {name}
+      </p>
+      <ProjectTags tags={tags} ref={ref} />
     </div>
   );
 }

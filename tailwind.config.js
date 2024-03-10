@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin');
 
 const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
@@ -26,7 +25,6 @@ export default {
       },
       animation: {
         marquee: 'marquee 35s linear infinite',
-        loader: 'jump 0.9s infinite',
       },
       keyframes: {
         marquee: {
@@ -37,34 +35,9 @@ export default {
             transform: 'translateX(calc(-100% - 2.5rem))',
           },
         },
-
-        jump: {
-          '10%, 90%': {
-            transform: 'translate(0,0) scaleX(1.1) scaleY(0.8)',
-          },
-          '50%': {
-            backgroundImage: 'url(/assets/bunny-jump.png)',
-            transform: 'translate(0,-60px) scaleX(0.9) scaleY(1.2)',
-          },
-        },
       },
     },
   },
 
-  plugins: [
-    plugin(({ matchUtilities, theme }) => {
-      matchUtilities(
-        {
-          'animation-delay': (value) => {
-            return {
-              'animation-delay': value,
-            };
-          },
-        },
-        {
-          values: theme('transitionDelay'),
-        },
-      );
-    }),
-  ],
+  plugins: [],
 };

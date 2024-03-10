@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { HiMiniBars3, HiXMark } from 'react-icons/hi2';
 
 import { useScrollTop } from '../hooks/useScrollTop';
-import NavLinks from './NavLinks';
+import NavLinks from './ui/NavLinks';
 import { cn } from '../lib/utils';
 
 function Navbar() {

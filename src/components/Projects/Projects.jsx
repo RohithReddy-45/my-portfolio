@@ -1,15 +1,39 @@
-import Project from './Project';
-import { projects } from '../../data/data';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
+import Project from './Project';
+import { projects } from '../../data/data';
+
 function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <div
       className="container mt-12 flex max-w-screen-2xl flex-col gap-3 px-6 py-3 text-center md:px-16"
       id="Projects"
+      ref={ref}
     >
-      <h1 className="text-3xl font-bold">Cool stuff I’ve built</h1>
-      <p className="mx-auto w-4/5 font-medium text-secondary">
+      <h1
+        className="text-3xl font-bold"
+        style={{
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? 'none' : 'translateY(20px)',
+          transition: 'all 0.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s',
+          transitionDelay: '0.3s',
+        }}
+      >
+        Cool stuff I’ve built
+      </h1>
+      <p
+        className="mx-auto w-4/5 font-medium text-secondary"
+        style={{
+          opacity: isInView ? 1 : 0,
+          transform: isInView ? 'none' : 'translateY(20px)',
+          transition: 'all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+          transitionDelay: '0.3s',
+        }}
+      >
         These are some of the websites I have built. I have used a variety of
         technologies to build these websites including Javascript, Typescript,
         HTML and CSS. I have also used a variety of frameworks and libraries
