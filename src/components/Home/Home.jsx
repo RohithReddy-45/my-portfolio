@@ -68,7 +68,7 @@ function Home() {
             transition: 'all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
           }}
         >
-          <Link to="Projects" smooth duration={500}>
+          <Link to="Projects" href="/Projects" smooth duration={500}>
             <Button className="md:text-lg">My projects</Button>
           </Link>
           <Button

@@ -26,7 +26,7 @@ function TechStack() {
             />
             <img
               src="/assets/typescript-logo-svgrepo-com.svg"
-              alt="react logo"
+              alt="typescript logo"
               className="size-14"
             />
             <img
