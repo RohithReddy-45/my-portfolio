@@ -12,7 +12,7 @@ function Project({ name, description, image, tags, liveSite, githubLink }) {
   return (
     <div className="flex flex-col gap-2 text-start" ref={ref}>
       <div
-        className="group relative overflow-y-auto"
+        className="group relative h-full max-w-[700px] overflow-y-auto"
         style={{
           opacity: isInView ? 1 : 0,
           transform: isInView ? 'none' : 'translateY(20px)',
@@ -24,7 +24,7 @@ function Project({ name, description, image, tags, liveSite, githubLink }) {
           loading="lazy"
           src={image}
           alt={`${name} image`}
-          className="h-auto w-auto rounded-xl"
+          className="rounded-xl object-center"
         />
 
         <div className="bg-gradient absolute inset-0 flex flex-col justify-around rounded-xl p-2 text-center text-xs text-white opacity-0 transition group-hover:opacity-100 group-hover:duration-1000 xs:text-lg sm:text-2xl md:p-4 md:text-sm lg:text-xl">

@@ -37,8 +37,14 @@ function TechStack() {
             <img
               src="/assets/nextjs-svgrepo-com.svg"
               alt="nextjs logo"
-              className="size-14"
+              className="size-16"
             />
+            <img
+              src="/assets/expo-svgrepo-com.svg"
+              alt="expo logo"
+              className="size-16"
+            />
+
             <img
               src="/assets/nodejs-svgrepo-com.svg"
               alt="nodejs logo"
@@ -128,7 +134,12 @@ function TechStack() {
             <img
               src="/assets/nextjs-svgrepo-com.svg"
               alt="nextjs logo"
-              className="size-14"
+              className="size-16"
+            />
+            <img
+              src="/assets/expo-svgrepo-com.svg"
+              alt="expo logo"
+              className="size-16"
             />
 
             <img

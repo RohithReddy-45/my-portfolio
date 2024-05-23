@@ -6,7 +6,7 @@ const ProjectTags = forwardRef(({ tags }, ref) => {
 
   return (
     <ul
-      className="flex flex-wrap items-center gap-2 text-xs font-medium text-secondary"
+      className="flex flex-wrap items-center gap-2 px-1 text-xs font-medium text-secondary"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,
