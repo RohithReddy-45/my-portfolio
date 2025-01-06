@@ -1,9 +1,8 @@
 # Personal Portfolio
 
 ### Demo
-<video controls src="portfolio.mp4" title="Title"></video>
 
-[Live Site](https://rohith-reddy.vercel.app/)
+<https://github.com/user-attachments/assets/b70d7bf2-8784-4b44-b91d-f2467e518897>
 
 ## Technologies used
 
