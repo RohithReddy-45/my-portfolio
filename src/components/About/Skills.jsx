@@ -30,7 +30,7 @@ const Skills = forwardRef((props, ref) => {
 			>
 				<strong>Key Technical Skills : </strong>Javascript, Typescript, Python,
 				React.js, Next.js, React Native, Expo, Node.js, Express.js, Tailwind
-				CSS, Redux, Postgres, MongoDB, React Query, Drizzle, Prisma, Zustand
+				CSS, Redux, Postgres, MongoDB, React Query, Drizzle, Prisma, Zustand, Shadcn, Bootstrap
 			</span>
 			<span
 				style={{

@@ -4,6 +4,25 @@ import { FaXTwitter } from "react-icons/fa6";
 export const projects = [
 	{
 		id: 1,
+		name: "Byte Tutorials",
+		description: "A tech learning platform with handpicked YouTube courses to help developers master various technologies.",
+		image: "/assets/ByteTutorials.jpg",
+		githubLink: "",
+		liveSite: "https://byte-tutorials.vercel.app/",
+		tags: [
+			"Next.js 15",
+			"TypeScript",
+			"Tailwind CSS",
+			"Drizzle ORM",
+			"Turso (SQLite)",
+			"Zod",
+			"Sentry",
+			"Playwright",
+		],
+		type: "WebApp",
+	},
+	{
+		id: 2,
 		name: "Vscode portfolio",
 		description: "A mobile app portfolio which resembles Vscode editor.",
 		image: "/assets/vscodeportfolio.jpg",
@@ -21,7 +40,7 @@ export const projects = [
 	},
 
 	{
-		id: 2,
+		id: 3,
 		name: "Spotify Clone",
 		description:
 			"An upgraded Spotify clone! Easily upload songs, make secure payments via Stripe.",
@@ -39,7 +58,7 @@ export const projects = [
 		type: "WebApp",
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Stepinstyle",
 		description: "Stepinstyle is an e-commerce shoe store.",
 		image: "/assets/stepinstyle.jpg",
@@ -56,7 +75,7 @@ export const projects = [
 		type: "WebApp",
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Recipe Hunt",
 		description:
 			"Recipehunt is a web app for finding recipes, providing ingredients and quantities for each item.",
@@ -67,7 +86,7 @@ export const projects = [
 		type: "WebApp",
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "Feastly",
 		description: "Feastly is a responsive restaurant website landing page.",
 		image: "/assets/Feastly.jpg",

@@ -90,6 +90,7 @@ function Projects() {
             {tabsData.map((tab, idx) => {
               return (
                 <button
+                  type='button'
                   key={idx}
                   ref={(el) => (tabsRef.current[idx] = el)}
                   className="pb-3 pt-2"
